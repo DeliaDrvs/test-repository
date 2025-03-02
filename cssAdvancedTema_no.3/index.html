@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Advanced Tema no.3</title>
+    <style>
+        body {
+            font-family: sans-serif;
+            font-size: 2vw;
+            background-color: #f4f4f4;
+            padding: 20px;
+        }
+
+        h1 {
+            font-size: 2em;
+            margin-bottom: 20px;
+            color: rgb(95, 97, 98);
+        }
+        
+        .gallery {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            gap: 10px;
+        }
+
+        .image-item {
+            text-align: center;
+            background-color: rgb(84, 184, 231);
+            width: 18%;
+            margin-bottom: 1px;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(219, 216, 216, 0.637);           
+        }
+
+        .image-item img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 5px;
+        }
+
+        .image-title {
+            margin-top: 1px;
+            color: #1f1e2c;
+            justify-content: center;
+            display: grid;
+            grid-template-columns: auto auto auto;
+            grid-auto-rows: minmax(auto);
+            gap: 20px;
+            align-items: end;
+            background-color: #f4f4f4;
+        }
+
+        .footer-text {
+            margin-top: 30px;
+            text-align: justify;
+            padding: 0 20px;
+            font-size: 16px;
+            color: #2d2d2e;
+            line-height: 1.6;
+        }
+    
+        @media (max-width: 1200px) {
+            .image-item {
+                width: 30%; 
+            }
+        }
+       
+        @media (max-width: 768px) {
+            .image-item {
+                width: 50%;
+           }
+        }
+
+        @media (max-width: 414px) {
+            .image-item {
+                width: 100%;
+           }
+        }
+    </style>
+</head>
+<body>
+    <h1>Gallery Heading</h1>
+    <div class="gallery">
+        <div class="image-item">
+            <img src="./imgs/placeholder-image.png" alt="Image 1">
+            <div class="image-title">Image Title</div>
+        </div>
+        <div class="image-item">
+            <img src="./imgs/placeholder-image.png" alt="Image 2">
+            <div class="image-title">Image Title</div>
+        </div>
+        <div class="image-item">
+            <img src="./imgs/placeholder-image.png" alt="Image 3">
+            <div class="image-title">Image Title</div>
+        </div>
+        <div class="image-item">
+            <img src="./imgs/placeholder-image.png" alt="Image 4">
+            <div class="image-title">Image Title</div>
+        </div>
+        <div class="image-item">
+            <img src="./imgs/placeholder-image.png" alt="Image 5">
+            <div class="image-title">Image Title</div>
+        </div>
+        <div class="image-item">
+            <img src="./imgs/placeholder-image.png" alt="Image 6">
+            <div class="image-title">Image Title</div>
+        </div>
+        <div class="image-item">
+            <img src="./imgs/placeholder-image.png" alt="Image 7">
+            <div class="image-title">Image Title</div>
+        </div>
+        <div class="image-item">
+            <img src="./imgs/placeholder-image.png" alt="Image 8">
+            <div class="image-title">Image Title</div>
+        </div>
+        <div class="image-item">
+            <img src="./imgs/placeholder-image.png" alt="Image 9">
+            <div class="image-title">Image Title</div>
+        </div>
+        <div class="image-item">
+            <img src="./imgs/placeholder-image.png" alt="Image 10">
+            <div class="image-title">Image Title</div>
+        </div>
+    </div>
+    <p class="footer-text">
+        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sed recusandae quis corporis aliquam, 
+        ad consequatur eum ullam labore magnam odio, delectus voluptas? Ab quisquam nulla, nesciunt, 
+        maiores vitae perferendis aperiam voluptatibus recusandae amet, odit sit saepe necessitatibus. 
+        Fugiat voluptas quis libero nulla autem natus facilis temporibus explicabo doloribus dignissimos 
+        dolorum, repellendus enim nesciunt earum deleniti cumque officiis consectetur quam laborum quod 
+        eum corporis, necessitatibus sunt! Nulla eligendi pariatur consequuntur maiores delectus doloribus 
+        architecto temporibus minus dolorem sequi iure, recusandae ullam odio quae odit officia placeat 
+        similique aliquam illo mollitia quis, assumenda unde, quo culpa. Consectetur dicta nulla laborum 
+        quod quos itaque deserunt quo? Natus, illo pariatur ipsam facilis animi perspiciatis aut commodi 
+        qui numquam et laboriosam officia nemo aperiam illum in facere reiciendis assumenda ea eos saepe 
+        sapiente placeat dignissimos dolorem. In quisquam harum adipisci eveniet consequuntur ullam ut 
+        error atque, sint rem, facere cupiditate, nostrum nihil id quidem suscipit eaque aut! Eaque, 
+        voluptas nihil adipisci ducimus ipsa numquam harum voluptate! Ea quibusdam praesentium 
+        exercitationem vel id minima minus sequi corrupti est earum labore tempore accusantium s
+        uscipit officia omnis eveniet sed possimus tempora libero non eaque, molestias perspiciatis 
+        itaque! Sint enim suscipit eveniet expedita dolores, esse tenetur non? Eum, autem! 
+        Animi vero incidunt quos, quibusdam mollitia at architecto officiis non illum rerum a
+        ccusantium eaque ex repellat similique quod, deleniti earum, vel sed ipsum beatae omnis error 
+        tenetur? Non, sint veniam? Quam cum obcaecati nobis nisi, in placeat cumque, corrupti consequatur 
+        quibusdam nam natus eius ipsa dolor exercitationem. Id dolorum earum ratione ipsum suscipit 
+        aliquid, est laudantium, fuga numquam, harum aperiam soluta! Aut sunt voluptate ipsum libero 
+        placeat saepe, nam, quos fuga commodi vero deserunt ipsa ut quis eos doloribus reiciendis 
+        possimus sed nisi at culpa! Nulla repellendus molestiae obcaecati ipsam dolores est soluta 
+        aliquid non adipisci, ipsa, voluptatibus, a accusamus?
+    </p>
+</body>
+</html>
