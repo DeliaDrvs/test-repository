@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Css Advanced Tema no.2</title>
+
+    <style>
+    body {
+        margin: 0;
+        min-height: 100vh;
+        display: grid;
+        place-content: center;
+        background: #f2f6f7;
+    }
+    .container {
+        width: 500px;
+        height: 500px;
+        margin: auto;
+        align-content: center;
+        background-position: center;
+        background-color: #050210;
+    }
+    .box  {
+        margin: auto;
+        --s: 280px;
+        
+        display: grid;
+        width: var(--s);
+        aspect-ratio: 1;
+        overflow: hidden;
+        padding: calc(var(--s)/15);
+        border-radius: 50%;
+        position: relative; 
+        filter: brightness(1);
+    }
+
+    .box::after {
+        content: "";
+        position: absolute;
+        inset: 0;
+        padding: inherit;
+        border-radius: inherit;
+        filter: brightness();
+
+        background: repeating-conic-gradient(#fb5dad 0 30deg,#55fb9f 0 60deg, #b97aff 0 90deg);  
+        mask: linear-gradient(#050210 0 0) content-box, linear-gradient(#050210 0 0);
+        mask-composite: exclude;
+        
+
+        background: linear-gradient(
+            90deg,
+            #fb5dad 0%,
+            #55fb9f 33%,
+            #b97aff 66%,
+            #fb5dad 100%
+            );
+        background-size: 400% 100%;
+        animation: glitch 2s linear infinite; 
+    }
+
+    .box::after {
+        animation: box 1s infinite cubic-bezier(.5,-0.2,.5,1.2);
+    } 
+
+    @keyframes box {
+        0%,3%    {transform: rotate(0)}
+        30%,33%  {transform: rotate(-90deg)}
+        50%,53%  {transform: rotate(-180deg)}  
+        70%,73%  {transform: rotate(-270deg)} 
+        98%,100% {transform: rotate(-360deg)}
+    }
+
+</style>
+
+    </style>
+</head>
+
+<body>
+
+    <div class="container">
+        <div class="box">
+
+        </div>
+  
+    </div>
+
+
+</body>
+</html>
